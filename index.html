@@ -38,27 +38,41 @@
 
     <main class="admin-main">
 
-      <section class="admin-card">
-  <h2>Funcionamento</h2>
+     <section class="admin-card">
 
-  <div class="form-grid">
-    <input type="time" id="opening-time">
-    <input type="time" id="closing-time">
-  </div>
+    <h2>Funcionamento</h2>
 
-  <label style="display:flex;gap:10px;margin:15px 0;">
-    <input type="checkbox" id="temporarily-closed">
-    Fechado temporariamente
-  </label>
+    <div class="form-grid">
 
-  <input
-    type="text"
-    id="closure-message"
-    placeholder="Mensagem para o cliente">
+        <div class="field">
+            <label>Abertura</label>
+            <input type="time" id="opening-time">
+        </div>
 
-  <button id="save-hours-btn">
-    Salvar funcionamento
-  </button>
+        <div class="field">
+            <label>Fechamento</label>
+            <input type="time" id="closing-time">
+        </div>
+
+    </div>
+
+    <label class="switch-row">
+        <input type="checkbox" id="temporarily-closed">
+        <span>Fechado temporariamente</span>
+    </label>
+
+    <textarea
+        id="closure-message"
+        rows="3"
+        placeholder="Ex.: Hoje não abriremos devido à falta de energia.">
+    </textarea>
+
+    <button
+        id="save-hours-btn"
+        class="btn-primary">
+        Salvar funcionamento
+    </button>
+
 </section>
 
       <!-- FORM ADICIONAR/EDITAR -->
