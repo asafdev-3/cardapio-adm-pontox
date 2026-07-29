@@ -38,6 +38,29 @@
 
     <main class="admin-main">
 
+      <section class="admin-card">
+  <h2>Funcionamento</h2>
+
+  <div class="form-grid">
+    <input type="time" id="opening-time">
+    <input type="time" id="closing-time">
+  </div>
+
+  <label style="display:flex;gap:10px;margin:15px 0;">
+    <input type="checkbox" id="temporarily-closed">
+    Fechado temporariamente
+  </label>
+
+  <input
+    type="text"
+    id="closure-message"
+    placeholder="Mensagem para o cliente">
+
+  <button id="save-hours-btn">
+    Salvar funcionamento
+  </button>
+</section>
+
       <!-- FORM ADICIONAR/EDITAR -->
       <section class="admin-card">
         <h2 id="form-title">Adicionar item</h2>
