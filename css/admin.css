@@ -379,3 +379,31 @@ body {
   .form-grid input:last-child { grid-column: 1; }
   .item-actions { flex-direction: column; }
 }
+
+.field{
+    display:flex;
+    flex-direction:column;
+    gap:8px;
+}
+
+.field label{
+    color:#bbb;
+    font-size:.85rem;
+    font-weight:600;
+}
+
+.switch-row{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    margin:18px 0;
+    color:#fff;
+}
+
+#closure-message{
+
+    width:100%;
+    resize:none;
+    margin-bottom:18px;
+
+}
