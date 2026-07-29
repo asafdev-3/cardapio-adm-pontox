@@ -63,6 +63,7 @@ async function loadData() {
   if (!itemRes.error) menuItems = itemRes.data;
 
   renderList();
+  await loadRestaurantSettings();
 }
 
 // ─── RENDER LISTA ───
@@ -254,3 +255,45 @@ function showMsg(text, type) {
   el.classList.remove("hidden");
   setTimeout(() => el.classList.add("hidden"), 3000);
 }
+
+async function loadRestaurantSettings() {
+    const { data, error } = await supabaseClient
+        .from("restaurants")
+        .select("opening_time, closing_time, temporarily_closed, closure_message")
+        .eq("id", restaurantId)
+        .single();
+
+    if (error || !data) return;
+
+    document.getElementById("opening-time").value = data.opening_time || "";
+    document.getElementById("closing-time").value = data.closing_time || "";
+    document.getElementById("temporarily-closed").checked = data.temporarily_closed || false;
+    document.getElementById("closure-message").value = data.closure_message || "";
+}
+
+async function saveRestaurantSettings() {
+
+    const payload = {
+        opening_time: document.getElementById("opening-time").value,
+        closing_time: document.getElementById("closing-time").value,
+        temporarily_closed: document.getElementById("temporarily-closed").checked,
+        closure_message: document.getElementById("closure-message").value
+    };
+
+    const { error } = await supabaseClient
+        .from("restaurants")
+        .update(payload)
+        .eq("id", restaurantId);
+
+    if (error) {
+        alert("Erro ao salvar.");
+        console.error(error);
+        return;
+    }
+
+    alert("Funcionamento atualizado!");
+}
+document
+    .getElementById("save-hours-btn")
+    .addEventListener("click", saveRestaurantSettings);
+
