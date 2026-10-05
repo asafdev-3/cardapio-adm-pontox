@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Dr. Espeto">
+  <rect width="512" height="512" rx="96" fill="#080808"/>
+  <circle cx="256" cy="256" r="188" fill="none" stroke="#D4AF37" stroke-width="12"/>
+  <circle cx="256" cy="256" r="162" fill="none" stroke="#8E7428" stroke-width="3" opacity=".7"/>
+  <g stroke="#D4AF37" stroke-width="8" stroke-linecap="round">
+    <path d="M126 144 L386 368"/>
+    <path d="M386 144 L126 368"/>
+  </g>
+  <path d="M256 119c18 29 7 49-8 65 31-4 55 21 55 52 0 27-20 49-47 49s-47-22-47-49c0-24 13-42 33-53-3 18 5 29 18 35-2-16 4-31 17-44 10-11 12-31-21-55z" fill="#D4AF37" opacity=".95"/>
+  <text x="256" y="314" text-anchor="middle" fill="#F5F0E6" font-size="62" font-family="Georgia, serif" font-style="italic">Dr. Espeto</text>
+  <text x="256" y="358" text-anchor="middle" fill="#D4AF37" font-size="22" font-family="Arial, sans-serif" letter-spacing="5">ESPETARIA</text>
+</svg>
