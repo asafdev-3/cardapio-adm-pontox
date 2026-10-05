@@ -1,3 +1,3 @@
 const SUPABASE_URL = "https://vqdzjphdyegihizochtd.supabase.co";
 const SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InZxZHpqcGhkeWVnaWhpem9jaHRkIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODE3NjE4MjAsImV4cCI6MjA5NzMzNzgyMH0.vuIVjk7r6dycFVKZwmt2eUVNbl1cfY7rSCygxvurwMc";
-const DEFAULT_SLUG = "pontox";
+const DEFAULT_SLUG = "imperios";
