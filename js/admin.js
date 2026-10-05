@@ -270,7 +270,7 @@ async function loadRestaurantSettings() {
     document.getElementById("temporarily-closed").checked = data.temporarily_closed || false;
     document.getElementById("closure-message").value = data.closure_message || "";
 }
-
+ 
 async function saveRestaurantSettings() {
 
     const payload = {
