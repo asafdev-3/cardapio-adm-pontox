@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Tropical Açaí e Lanches">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#6A1B9A"/>
+      <stop offset="1" stop-color="#8E24AA"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="96" fill="#0B0B0B"/>
+  <circle cx="256" cy="256" r="205" fill="url(#g)" stroke="#F5C542" stroke-width="14"/>
+  <path d="M257 115c-46 8-83 33-111 73 45-18 83-16 115 8-7-32-8-58-4-81zm7 80c35-35 75-48 121-39-25 23-50 44-79 63 30-2 56 3 79 16-48 1-88-10-121-40z" fill="#36C66A"/>
+  <path d="M254 174c0 0-19 72-4 152" stroke="#F5C542" stroke-width="12" stroke-linecap="round"/>
+  <text x="256" y="338" text-anchor="middle" fill="#FFFFFF" font-family="Arial Black,Arial,sans-serif" font-size="58" font-weight="900">TROPICAL</text>
+  <text x="256" y="386" text-anchor="middle" fill="#F5C542" font-family="Arial,Helvetica,sans-serif" font-size="30" font-weight="700" letter-spacing="3">AÇAÍ & LANCHES</text>
+</svg>
